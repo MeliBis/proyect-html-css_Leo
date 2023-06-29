@@ -1,0 +1,53 @@
+:root{
+    --main-color:#212121;
+    --grey:#333;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+body{
+    background-color: ;
+}
+.hero{
+    background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('./assets/patron-1.png');
+   /*  background-repeat: no-repeat; */
+   /*  background-size: cover; */
+    height: 350px;
+}
+nav details summary{
+    font-weight: bold;
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5rem;
+}
+pre{
+    background: #fec62e;
+}
+h3{
+    counter-increment: titleList;
+}
+.section-content{
+    counter-reset: titleList;
+}
+.section-content h3::before{
+    content: counter(titleList);
+}
+.section-content h3::after{
+    content: "";
+    width: 32px;
+    height:4px ;
+    background: var(--grey);
+    display: inline-block;
+}
+/* ::selection{
+    background: red;
+} */
