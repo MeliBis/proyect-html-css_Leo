@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-example.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="wrapper">
+            <div class="header-content">
+                <div class="section-1_progress">
+        
+                    <p class="texto">Texto de ejemplo</p>
+                    <label for="file">File progress:</label>
+                
+                    <progress id="file" max="100" value="80"> 80% </progress>
+                </div>
+            </div>
+        </div>
+        <!-- datalist -->
+        <section class="section-2">
+            <div class="wrapper">
+
+                <label>Choose a browser from this list:
+                    <input list="browsers" name="myBrowser" /></label>
+                    <datalist id="browsers">
+                      <option value="Chrome">
+                      <option value="Firefox">
+                      <option value="Internet Explorer">
+                      <option value="Opera">
+                      <option value="Safari">
+                      <option value="Microsoft Edge">
+                    </datalist>
+            </div>
+        </section>
+    </div>
+    
+    <script src="">
+        document.addEventListener("DOMContentLoaded", function() {
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'You clicked the button!';
+    document.body.appendChild(para);
+  }
+
+  const buttons = document.querySelectorAll('button');
+
+  for(let i = 0; i < buttons.length ; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+});
+    </script>
+</body>
+</html>

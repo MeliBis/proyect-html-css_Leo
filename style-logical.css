@@ -21,7 +21,6 @@ body{
     margin-block-end: 50px; */
 /*     writing-mode: vertical-lr;
  */
- margin: 0;
 }
 .hero{
     background-image: linear-gradient(148deg, #314755 34.50%, #26A0DA 82.40%);   /*  background-repeat: no-repeat; */

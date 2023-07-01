@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: pink;
+    
+}
+.hero{
+    margin-inline: 600px;
+    margin-block-start: 50px;
+    border: 2px solid rgb(239, 115, 136);
+}
+.wrapper{
+    width:902px;
+    margin: auto;
+}
+.texto {
+ /*    writing-mode: vertical-rl;
+    background-color: yellow;
+    block-size: 200px; */
+
+  }
